@@ -1,7 +1,7 @@
 // controllers/authController.js
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const config = require('config');
+const config = require('config/');
 const User = require('../models/userModel');
 
 const generateToken = (user) => {
@@ -12,8 +12,7 @@ const generateToken = (user) => {
       role: user.role,
     },
   };
-
-  return jwt.sign(payload, config.get('jwtSecret'), { expiresIn: 3600 }); // 1 hour expiration
+  return jwt.sign(payload, config.get('jwtSecret'), { expiresIn: '30d' }); 
 };
 
 const loginUser = async (req, res, next) => {

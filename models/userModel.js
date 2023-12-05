@@ -10,7 +10,7 @@ const userSchema = new Schema({
     reservedAt: { type: Date, default: Date.now },
     // returnedAt: { type: Date },
   }],
-  reservationHistory: [{
+  bookReservationHistory: [{
     book: { type: Schema.Types.ObjectId, ref: 'Book', required: true },
     reservedAt: { type: Date, required: true },
     returnedAt: { type: Date },
