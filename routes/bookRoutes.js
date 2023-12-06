@@ -1,7 +1,6 @@
 // routes/bookRoutes.js
 const express = require('express');
 const bookRouter = express.Router();
-const authenticateToken = require('../middleware/authMiddleware');
 
 const {
     getAllBooks,
