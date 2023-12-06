@@ -36,5 +36,5 @@ This project is a Local Library Management System, a web application for managin
 
    ```bash
    git clone https://github.com/rishidyno/local-library-management-system.git
-
-### will update **README.md** when I update project 
+   npm install
+   yarn start
