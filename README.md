@@ -35,6 +35,6 @@ This project is a Local Library Management System, a web application for managin
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rishidyno/local-library-management-system.git
+   git clone https://github.com/prashantsaxe/libarary_management_backend.git
    npm install
    yarn start
